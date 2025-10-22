@@ -10,5 +10,12 @@
     "dependencies"
   ],
   "prConcurrentLimit": 12,
-  "minimumReleaseAge": "1 day"
+  "minimumReleaseAge": "1 day",
+  "packageRules": [
+    {
+      "matchPackagePatterns": ["^BiQ/gitops-workflows"],
+      "matchUpdateTypes": ["patch", "minor"],
+      "automerge": true
+    }
+  ]
 }
