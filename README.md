@@ -6,31 +6,31 @@
 
 ## Table of Contents
 
-1. Motivation
-2. What Is a Renovate Preset?
-3. Quick Start
-4. Available Presets (Overview)
-5. Preset Naming Conventions
-6. Layering & Composition Strategy
-7. Usage Examples
-8. Ruby (Rails + MSSQL) Specific Guidance
-9. Go Module Strategy
-10. JavaScript/TypeScript Strategy
-11. Docker Image Strategy
-12. GitHub Actions Strategy
-13. Terraform & IaC Strategy
-14. Dependency Grouping Patterns
-15. Scheduling & Rate Control
-16. Versioning Philosophy for Presets
-17. Creating / Updating a Preset
-18. Validation & Testing
-19. Observability & Metrics
-20. Security & Supply Chain Considerations
-21. FAQ
-22. Contributing
-23. License
-24. Roadmap / Future Ideas
-25. Appendix: Reference Snippets
+1. [Motivation](#1-motivation)  
+2. [What Is a Renovate Preset?](#2-what-is-a-renovate-preset)  
+3. [Quick Start](#3-quick-start)  
+4. [Available Presets (Overview)](#4-available-presets-overview)  
+5. [Preset Naming Conventions](#5-preset-naming-conventions)  
+6. [Layering & Composition Strategy](#6-layering--composition-strategy)  
+7. [Usage Examples](#7-usage-examples)  
+8. [Ruby (Rails + MSSQL) Specific Guidance](#8-ruby-rails--mssql-specific-guidance)  
+9. [Go Module Strategy](#9-go-module-strategy)  
+10. [JavaScript/TypeScript Strategy](#10-javascripttypescript-strategy)  
+11. [Docker Image Strategy](#11-docker-image-strategy)  
+12. [GitHub Actions Strategy](#12-github-actions-strategy)  
+13. [Terraform & IaC Strategy](#13-terraform--iac-strategy)  
+14. [Dependency Grouping Patterns](#14-dependency-grouping-patterns)  
+15. [Scheduling & Rate Control](#15-scheduling--rate-control)  
+16. [Versioning Philosophy for Presets](#16-versioning-philosophy-for-presets)  
+17. [Creating / Updating a Preset](#17-creating--updating-a-preset)  
+18. [Validation & Testing](#18-validation--testing)  
+19. [Observability & Metrics](#19-observability--metrics)  
+20. [Security & Supply Chain Considerations](#20-security--supply-chain-considerations)  
+21. [FAQ](#21-faq)  
+22. [Contributing](#22-contributing)  
+23. [License](#23-license)  
+24. [Roadmap / Future Ideas](#24-roadmap--future-ideas)  
+25. [Appendix: Reference Snippets](#25-appendix-reference-snippets)
 
 ---
 
@@ -566,7 +566,7 @@ Coding style:
 
 ---
 
-## Badge Suggestions (Add Once CI Is Set Up)
+## Badge Suggestions 
 
 | Badge | Purpose |
 |-------|---------|
@@ -575,7 +575,7 @@ Coding style:
 | Release (tag) | Latest preset version |
 | Security | Dependabot / Advisory status |
 
-Example placeholder:
+Example placeholder: [![Renovate Enabled](https://img.shields.io/badge/renovate-enabled-brightgreen.svg)](https://docs.renovatebot.com/)
 
 ```
 [![Renovate Enabled](https://img.shields.io/badge/renovate-enabled-brightgreen.svg)](https://docs.renovatebot.com/)
