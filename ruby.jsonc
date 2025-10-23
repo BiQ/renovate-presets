@@ -1,0 +1,43 @@
+{
+  "labels": ["dependencies", "{{categories}}"],
+  "packageRules": [
+    {
+      "groupName": "Bundler: dev dependencies",
+      "matchManagers": ["bundler"],
+      "matchDepTypes": ["development"]
+    },
+    {
+      "groupName": "Bundler: test dependencies",
+      "matchManagers": ["bundler"],
+      "matchDepTypes": ["test"],
+      "automerge": true,
+      "automergeSchedule": ["at any time"],
+      "schedule": ["at any time"]
+    },
+    {
+      "groupName": "Bundler: prod dependencies",
+      "matchManagers": ["bundler"],
+      "matchDepTypes": ["default", "production"]
+    },
+    {
+      "groupName": "Docker Images",
+      "matchDatasources": ["docker"],
+      "schedule": ["at any time"]
+    },
+    {
+      "groupName": "NPM - styling",
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["/\\beslint\\b/", "/\\bprettier\\b/"],
+      "minimumReleaseAge": "3 days"
+    },
+    {
+      "groupName": "NPM",
+      "matchDatasources": ["npm"],
+      "minimumReleaseAge": "3 days"
+    },
+    {
+      "groupName": "GitHub Actions",
+      "matchManagers": ["github-actions"]
+    }
+  ]
+}
