@@ -18,7 +18,7 @@
       "automerge": true
     },
     {
-      // Auto-merge ruby base image updates where only the sha256 digest changes.
+      // Auto-merge base image updates where only the sha256 digest changes.
       // This lets us strictly pin the Docker image version, but also keep up with
       // incoming security updates without manual intervention. We get a trail of
       // explicit PRs and git changes for each digest update, so any necessary revert
